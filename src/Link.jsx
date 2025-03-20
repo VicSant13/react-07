@@ -18,6 +18,7 @@ export function Link({target,to,...props}){
         if(isMainEvent && isManageable && !isModifiedEvent){
             event.preventDefault() //evita que se recargue la página (su comportamiento por default)
             navigate(to)
+            window.scrollTo(0,0)
         }                    
     }
     return <a onClick={handleClick} href={to} target={target} {...props}/>
