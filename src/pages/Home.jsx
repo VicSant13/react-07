@@ -1,5 +1,6 @@
 import { Link } from "../Link"
 export default function HomePage(){
+  console.log('Importando el archivo HomePage.jsx')
     return (
       <>
         <h1>Home</h1>
